@@ -5,4 +5,14 @@ class PagesController < ApplicationController
     def about
         
     end
+    def blog
+        
+    end
+    def local
+        
+    end
+    def global
+        
+    end
+    
 end 
