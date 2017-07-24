@@ -16,7 +16,14 @@
  
     @import "font-awesome-sprockets";
     @import "font-awesome";
-    
+html {
+    -webkit-tap-highlight-color: transparent;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
@@ -27,7 +34,7 @@ nav, .home-callout {
 }
 .navbar{
     border: none;
-    font-family: 'cursive';
+    font-family: 'Artifika', serif;
     font-weight: 150%;
 }
 .btn {
@@ -36,19 +43,29 @@ nav, .home-callout {
   justify-content: center;
 }
 
-.btn-default {
-    border: none;
-    color: white;
-    background-color: transparent;
-    margin: auto, 0;
-    &:hover, &:active, &:target, &:link, &:lang, &:enabled, &:focus{
+
+#mainbutton {
+    background-color: #42a03d;
+    margin: 0 auto; 
+    border-color: white;
+    &:hover, &:active, &:focus {
         background: rgba(168, 224, 99, 0.6)
     }
 }
+#dropdown {
+    height: 50px; 
+    background-color: transparent; 
+    border: none; 
+    border-radius: 0px;
+    color: #fff;
+}
 
-.open > .dropdown-toggle.btn-default:hover, .open>.dropdown-toggle.btn-default:focus, .btn-default.active, .btn-default:active, .btn-default:hover, .btn-default:visited {
-    color: white;
-    background: rgba(168, 224, 99, 0.6)
+.navbar .navbar-nav li {
+
+}
+
+.navbar .navbar-nav .navbar-right {
+    color:white;
 }
 
 a, a:hover, a:focus{
@@ -58,7 +75,6 @@ a, a:hover, a:focus{
   background-color: white;
 }
 .navbar-default .navbar-toggle {
-  border: 2px solid white;
   
   &:hover, &:focus {
     background-color: #a8e063;
@@ -75,6 +91,7 @@ a, a:hover, a:focus{
     margin-top: -20px;
     padding-top: 50px;
     padding-bottom: 50px;
+    border-bottom: solid 1px gray;
 } 
 .navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
@@ -116,4 +133,27 @@ a, a:hover, a:focus{
 }
 img {
      margin-top: 0px;   
+}
+
+.footer {
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top: 1px solid gray;
+    position: fixed;
+    top: 800px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin: 0px;
+
+}
+.bottom,  {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+.bottom h2 {
+    text-align: right;
 }
