@@ -1,13 +1,50 @@
-<div class='home-callout text-center container-fluid'>
-<h1>Welcome to GreenMark</h1>
-<h3>Enabling projects concerning our planet!</h3>
+<div class="background">
+	<div class="home-callout text-center container-fluid">
+		<i src =""></i>
+	</div>
+	<div class="about">
+		<div class="aboutinfo">
+			<h1 style="font-family: 'Skranji', cursive;">Welcome to GreenMark!</h1>
+		</div>
+		<div class="blogbutton">
+		<br>
+		<a href="https://ruby-practice2-littleluk.c9users.io/blog">
+	    <button type="button" class="btn btn" id="mainbutton">
+	              <%= link_to "Proceed to Blog", blog_path %>
+	    </button>
+	    </a>
+		</div>
+		<div class="socialmedia">
+			<h3>Follow us on Social Media!</h3>
+			<a href="https://twitter.com/YourEcolution"><i class="fa fa-twitter-square" style="font-size: 2.5em;" aria-hidden="true"></i></a>
+			&nbsp; &nbsp; &nbsp; &nbsp;
+			<i class="fa fa-telegram" style="font-size: 2.5em;" aria-hidden="true"></i>
+			&nbsp; &nbsp;
+			<a href="https://medium.com/@MarkLawMiller"><i class="fa fa-medium" style="font-size: 2.5em;" aria-hidden="true"></i></a>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<a href="https://open.spotify.com/user/markisthinkingabout"><i class="fa fa-spotify" style="font-size: 2.5em;" aria-hidden="true"></i></a>
+		</div>
+		<div class="contact">
+			<br>
+			<button type="button" class="btn btn" id="contactus" >
+			
+	              <%= link_to "Contact us", about_path %>
+	    </button>
+			
+		</div>
+	</div>
+	
+<div class="footer">
+  <div class="bottom">
+    <h4>GreenMark &#169 2017</h4>
+    <p> This webpage was made by GreenMark</p>
+    <p> Responsible for this page are:</p>
+    <p> Mark Miller and Lukas Stellwag</p>
+  </div>
 </div>
+</div>
+  
 
-<div class="container, nav home-callout">
-    <button type="button" class="btn btn" id="mainbutton" style="">
-              <%= link_to "Proceed to Blog", blog_path %>
-    </button>
-</div>
 	
 <!-- <div class="container home">
 		<div class="container" style="padding-top: 0px; height: 80%" >
